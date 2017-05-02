@@ -1,0 +1,26 @@
+<style type="text/css">
+    body{
+        min-height: 1500px;
+    }
+    #blfix{
+        display:none;
+        position:fixed;
+        top:0;
+        background-color: red;
+        width: 100%;
+        padding: 20px;
+
+        border-bottom: 2px solid green;
+    }
+</style>
+<div id="content">Пример теста</div>
+<div id="blfix">Наш блок</div>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+    jQuery(function(f){
+        var element = f('#blfix');
+        f(window).scroll(function(){
+            element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](500);
+        });
+    });
+</script>
