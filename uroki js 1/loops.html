@@ -7,9 +7,25 @@
 <body>
 <script type="text/javascript">
     var i;
-    for(i = 0; i < 10; i++ )
+    for(i = 0; i < 10; i++ ){
+       if(i % 3 == 0 && i != 0 || i == 1) continue;//и && или ||
+        if(i == 4) break;
+        document.write("<br>" + i);
+    }
+    var x = 5;
+    while(x < 100){
+        x+=5;
+        document.write("<br>" + x);
+    }
+    var y = 15;
+    do{
+        y++;
+        document.write("цикл do while ");
+    }
+    while(y < 100);
 
-         document.write("<br>" + i);
+
+
 
 </script>
 
