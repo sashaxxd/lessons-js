@@ -23,3 +23,4 @@ function moveRight(){
         slide_left.style.display = 'none';
     }
 }
+//
