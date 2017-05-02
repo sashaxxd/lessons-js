@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+	<style>
+	.pressMe{
+	height: 50px; 
+	width: 80px; 
+	background: green;
+	}
+	
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<script> 
+$(document).ready(function(){// После загрузки документа
+    $('#wrapper').load('load.php');// К диву враппер применям функцию джейкверри лоад и загружам php cкрипт
+    //$('li a',obj).click(function //Вместо этого вствим то что ниже и клик заработает хотя блок подгруен аяксом
+	//$('body').on('click','li a',obj,function // пример в yii2 аккардеон
+    /*$('.pressMe').click(function()*/ //Вместо этого вствим то что ниже и клик заработает хотя блок подгруежен аяксом
+	$('body').on('click','.pressMe',function()
+	{
+        alert('1');
+    });
+});
+</script>
+
+<div id="wrapper" style="height: 100px; width: 100%; background: red; ">
+
+</div>
+
+</body>
+</html>

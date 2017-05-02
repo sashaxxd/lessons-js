@@ -1,0 +1,32 @@
+.wrap-slider{
+    position:relative;
+}
+.slider{
+    margin:0 auto;
+    height:400px;
+    width:280px;
+    overflow:hidden;
+}
+.slider img{
+    height:400px;
+    width:auto;
+
+}
+/*.slider-content{
+    margin-left:-280px;
+}*/
+
+.slider-nav .slider-arrow {
+    position:absolute;
+    bottom:0;
+    font-size: 50px;
+    color:#F62459;
+    cursor:pointer;
+}
+.slider-nav .slider-left {
+    display:none;
+    left:0;
+}
+.slider-nav .slider-right {
+    right:10px;
+}

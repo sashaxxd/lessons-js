@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    //Оператор if
+    var number = 10;
+    var number2 = 5;
+    if((number / number2) == 2)
+    {
+        alert("Правда");
+    }
+
+    else
+        document.write("Ложь");
+    // Оператор switch
+    switch (5)
+    {
+        case 4: document.write("<br>Четверка"); break;
+        case 8: document.write("<br>Пять"); break;
+        case 6: document.write("<br>Шесть"); break;
+        case 7: document.write("<br>Семь"); break;
+        default:  document.write('Нет такой цифры');
+    }
+    //Cпособ записи if в php есть похожий требует 2 значения вопросик и двоеточие
+
+    var x = 4;
+    var y = 6;
+    var bool = true;
+
+    y > x ? document.write("<br>Игрик больше x") : document.write("Игрик меньше x<br>");
+    // условие в условии
+    if (x < y)
+    {
+        if(bool)
+        {
+               document.write('<br>Правда');
+        }
+        document.write("<br>Конено правда");
+    }
+
+
+</script>
+
+</body>
+</html>
